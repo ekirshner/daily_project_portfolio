@@ -29,11 +29,21 @@ class StarComponent extends Component {
         return (
             <div className="star-container">
                 <div className="stars">
-                    <SingleStar value="1" onHover={(event) => this.handleHover(event)} rating={this.state.rating} handleClick={(event) => this.clickToChangeRating(event)}/>
-                    <SingleStar value="2" onHover={(event) => this.handleHover(event)} rating={this.state.rating} handleClick={(event) => this.clickToChangeRating(event)}/>
-                    <SingleStar value="3" onHover={(event) => this.handleHover(event)} rating={this.state.rating} handleClick={(event) => this.clickToChangeRating(event)}/>
-                    <SingleStar value="4" onHover={(event) => this.handleHover(event)} rating={this.state.rating} handleClick={(event) => this.clickToChangeRating(event)}/>
-                    <SingleStar value="5" onHover={(event) => this.handleHover(event)} rating={this.state.rating} handleClick={(event) => this.clickToChangeRating(event)}/> 
+                    <SingleStar value="1" onHover={(event) => this.handleHover(event)} 
+                        rating={this.state.rating} 
+                        handleClick={(event) => this.clickToChangeRating(event)}/>
+                    <SingleStar value="2" onHover={(event) => this.handleHover(event)} 
+                        rating={this.state.rating} 
+                        handleClick={(event) => this.clickToChangeRating(event)}/>
+                    <SingleStar value="3" onHover={(event) => this.handleHover(event)} 
+                        rating={this.state.rating} 
+                        handleClick={(event) => this.clickToChangeRating(event)}/>
+                    <SingleStar value="4" onHover={(event) => this.handleHover(event)} 
+                        rating={this.state.rating} 
+                        handleClick={(event) => this.clickToChangeRating(event)}/>
+                    <SingleStar value="5" onHover={(event) => this.handleHover(event)} 
+                        rating={this.state.rating} 
+                        handleClick={(event) => this.clickToChangeRating(event)}/> 
                 </div>
                 <p> Rating: {this.state.rating} </p>
             </div>

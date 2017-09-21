@@ -13,7 +13,8 @@ class SingleStar extends Component {
             )
         } else {
             return (
-                <div className="singleStar" onMouseOver={() => this.props.onHover(this.props.value)} onClick={() => this.props.handleClick(this.props.value)}>
+                <div className="singleStar" onMouseOver={() => this.props.onHover(this.props.value)} 
+                    onClick={() => this.props.handleClick(this.props.value)}>
                     &#9733;
                 </div>
             )

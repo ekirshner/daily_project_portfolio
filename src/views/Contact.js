@@ -7,7 +7,7 @@ class Contact extends Component {
             <div>
                 <h2>Contact </h2>
                 <p>Erica Kirshner</p>
-                <p>555-837-5309</p>
+                <p>555-867-5309</p>
                 <p>contact@ThisSite.com</p>
                 <p>555 Employment Way</p>
             </div>

@@ -7,6 +7,7 @@ import Resume from './views/Resume';
 import Contact from './views/Contact';
 import Projects from './views/Projects';
 import Home from './views/Home';
+import ProjectPage from '../src/components/projectPage';
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
           <Route path='/projects' component={Projects} />
           <Route path='/resume' component={Resume} />
           <Route path='/contact' component={Contact} />
+          <Route path='/projectsPage/:id' component={ProjectPage} />
         </Switch>
       </div>
     );
