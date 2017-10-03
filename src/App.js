@@ -10,14 +10,16 @@ import Home from './views/Home';
 import ProjectPage from '../src/components/projectPage';
 
 class App extends Component {
+
   render() {
+
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={ logo } className="App-logo" alt="logo" />
           <nav>
           <ul className="nav-ul">
-            <li><Link to='/home'>Home</Link></li>
+            <li><Link to='/'>Home</Link></li>
             <li><Link to='/projects'>Projects</Link></li>
             <li><Link to='/resume'>Resume</Link></li>
             <li><Link to='/contact'>Contact</Link></li>
@@ -27,11 +29,11 @@ class App extends Component {
         </div>
         
         <Switch>
-          <Route path='/home' component={Home} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/resume' component={Resume} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/projectsPage/:id' component={ProjectPage} />
+          <Route path='/projects' component={ Projects } />
+          <Route path='/resume' component={ Resume } />
+          <Route path='/contact' component={ Contact } />
+          <Route path='/projectsPage/:id' component={ ProjectPage } />
+          <Route path='/' component={ Home } />
         </Switch>
       </div>
     );
